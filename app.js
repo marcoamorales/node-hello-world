@@ -1,5 +1,5 @@
 var http = require('http');
-var PORT = process.env.PORT || 8000;
+var PORT = Number(process.env.PORT || 8000);
 
 http.createServer(function (req, res) {
   console.log('%d request received', process.pid);
